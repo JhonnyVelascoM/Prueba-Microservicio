@@ -1,7 +1,5 @@
 package com.siatigroup.gop.empleados.Models;
 
-import java.security.Timestamp;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -12,14 +10,17 @@ import lombok.Data;
 @Entity
 @Table(name = "notification")
 
-public class ClaseEntity{
+public class CedulaEntity {
     @Id
-    @Column(name = "tracking")
-    private String tracking; 
+    private Integer idstatus;
+    @Column(name = "dni")
+    private String dni;
     @Column(name = "idstate")
     private Integer idstate;
-    @Column(name = "lastdate")
-    private Timestamp lastdate;   
+    @Column(name = "ppbnumber")
+    private String ppbnumber;
+    @Column (name = "whnumber")
+    private String whnumber;
+    @Column(name = "tracking")
+    private String tracking;     
 }
-
-

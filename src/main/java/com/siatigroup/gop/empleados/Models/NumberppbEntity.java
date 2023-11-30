@@ -12,14 +12,12 @@ import lombok.Data;
 @Entity
 @Table(name = "notification")
 
-public class ClaseEntity{
+public class NumberppbEntity {
     @Id
-    @Column(name = "tracking")
-    private String tracking; 
+    @Column(name = "ppbnumber")
+    private String ppbnumber;
     @Column(name = "idstate")
     private Integer idstate;
     @Column(name = "lastdate")
-    private Timestamp lastdate;   
+    private Timestamp lastdate;
 }
-
-
